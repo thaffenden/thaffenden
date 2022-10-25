@@ -10,10 +10,21 @@
         src: url("./fonts/CanterburyRegular-MVqn.ttf");
       }
 
+      :root {
+        /* colors */ 
+        --black: #000000;
+        --purple: #580a7f;
+        --white: #ffffff;
+        /* fonts */
+        --font-accent: "Cormorant", serif;
+        --font-body: "Work Sans", sans-serif;
+        --font-header: "canterbury", serif;
+      }
+
       body {
-        background-color: #000000;
-        color: #fff;
-        font-family: 'Work Sans', sans-serif;
+        background-color: var(--black);
+        color: var(--white);
+        font-family: var(--font-body);
         font-size: 2rem;
         margin-left: 2rem;
       }
@@ -23,14 +34,14 @@
       }
 
       p span {
-        color: #580a7f;
-        font-family: 'Cormorant', serif;
+        color: var(--purple);
+        font-family: var(--font-accent);
         font-size: 7rem;
         padding: 0px;
       }
 
       h1 {
-        font-family: "canterbury";
+        font-family: var(--font-header);
         font-size: 10rem;
         margin-top: 2rem;
         margin-bottom: 0px;
