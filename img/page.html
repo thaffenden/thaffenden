@@ -5,11 +5,6 @@
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Work+Sans:wght@300&display=swap");
 
-      @font-face {
-        font-family: "canterbury";
-        src: url("./fonts/CanterburyRegular-MVqn.ttf");
-      }
-
       :root {
         /* colors */ 
         --black: #000000;
@@ -18,7 +13,7 @@
         /* fonts */
         --font-accent: "Cormorant", serif;
         --font-body: "Work Sans", sans-serif;
-        --font-header: "canterbury", serif;
+        --font-header: "Canterbury", serif;
       }
 
       body {
@@ -27,29 +22,75 @@
         font-family: var(--font-body);
         font-size: 2rem;
         margin-left: 2rem;
+        margin-right: -5rem;
       }
 
-      p {
-        margin: 1px;
-      }
-
-      p span {
-        color: var(--purple);
-        font-family: var(--font-accent);
-        font-size: 7rem;
-        padding: 0px;
+      body div {
+        margin-left: 2rem;
       }
 
       h1 {
         font-family: var(--font-header);
         font-size: 10rem;
         margin-top: 2rem;
-        margin-bottom: 0px;
+        margin-bottom: 0rem;
+      }
+
+      p {
+        margin: 0rem;
+      }
+
+      p span {
+        color: var(--purple);
+        font-family: var(--font-accent);
+        font-size: 7rem;
+        margin-bottom: -1rem;
+        padding: 0rem;
+      }
+
+      ul {
+        list-style: none;
+        margin-bottom: 0rem;
+        margin-left: 0.5rem;
+        margin-top: 0rem;
+        padding: 1rem;
+        padding-bottom: 0rem;
+      }
+
+      li::before {
+        color: var(--purple);
+        content: "\203A";
+        display: inline-block;
+        margin-right: 1rem;
+      }
+
+      ul.bring-closer {
+        padding-top: 0rem;
       }
     </style>
   </head>
   <body>
-    <h1>tristan haffenden</h1>
-    <p>software engineer<span> & </span>professional pedant</p>
+    <div>
+      <h1>tristan</br>haffenden               </h1>
+      <p>software engineer<span> & </span>professional pedant</p>
+      </br>
+      <p>mostly working with:</p>
+      <ul>
+        <li><img src="https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white" alt="golang"></li>
+        <li><img src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript"></li>
+        <li><img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell scripts"</li>
+        <li><img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54" alt="python"</li>
+      </ul>
+      </br>
+      <p><span>& </span>learning more about:</p>
+      <ul class="bring-closer">
+        <li><img src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white&color=orange" alt="rust"></li>
+        <li><img src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=black&color=white" alt="next-js"></li>
+      </ul>
+      </br>
+      </br>
+      <p>🪴✌️</p>
+      </br>
+    </div
   </body>
 </html>
